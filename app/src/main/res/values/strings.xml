@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SwipeTask</string>
+    <string name="loading">Loading...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_of_product">image of product</string>
+    <string name="hint_enter_tax_rate_in_percentage">Enter Tax Rate in Percentage</string>
+    <string name="hint_enter_selling_price_in_rupees">Enter Selling Price in rupees</string>
+    <string name="hint_enter_product_name">Enter Product Name</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginHorizontal="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtVProdName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        android:hint="Product Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgVProduct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgVProduct"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:contentDescription="@string/image_of_product"
+        android:src="@drawable/ic_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:hint="1900"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtVProdName"
+        app:layout_constraintTop_toBottomOf="@+id/txtVProdName" />
+
+    <TextView
+        android:id="@+id/txtVTax"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_2sdp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:hint="TAX is 15%"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtVProdName"
+        app:layout_constraintTop_toBottomOf="@+id/txtVPrice" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipProdType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Type"
+        app:chipBackgroundColor="@color/default_vibrant_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtVTax"
+        app:layout_constraintTop_toBottomOf="@+id/txtVTax" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
