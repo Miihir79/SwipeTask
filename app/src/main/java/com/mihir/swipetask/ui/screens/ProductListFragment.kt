@@ -20,14 +20,10 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 class ProductListFragment : Fragment() {
-
     private var _binding: FragmentProductListBinding? = null
     private val binding get() = _binding!!
-
     private val adapter by lazy { AdapterProduct() }
-
     private val viewModel by lazy { ViewModelProvider(this)[ViewModel::class.java] }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
